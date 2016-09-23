@@ -1,4 +1,13 @@
+// root component
+
 import { Component } from '@angular/core';
+
+// Hero class
+// Classes are created before the final component class is exported
+export class Hero{
+  id : number;
+  name : string;
+}
 
 @Component({
   selector: 'app-root',
