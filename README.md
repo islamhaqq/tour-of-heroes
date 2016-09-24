@@ -4,6 +4,9 @@
 * We wrote a multi-line template using ES2015’s template strings to make our template readable.
 * We can both display and change the hero’s name after adding a two-way data binding to the <input> element using the built-in ngModel directive.
 * The ngModel directive also propagates changes to every other binding of the hero.name.
+* Our Tour of Heroes now displays a list of selectable heroes
+* We added the ability to select a hero and show the hero’s details
+* We learned how to use the built-in directives ngIf and ngFor in a component’s template
 
 ## Angular CLI
 
