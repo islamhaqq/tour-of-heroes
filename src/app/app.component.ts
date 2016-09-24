@@ -33,4 +33,6 @@ export class AppComponent {
     id : 1,
     name : 'Windstorm'
   };
+  // no need to specify type of heros since TypeScript can infer from the ListOfHeroes array
+  heros = ListOfHeroes;
 }
