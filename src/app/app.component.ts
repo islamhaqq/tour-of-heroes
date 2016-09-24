@@ -9,7 +9,7 @@ export class Hero{
   name : string;
 }
 
-const ListOfHeroes: Hero[] = [
+const HEROES: Hero[] = [
   { id: 1, name: 'Mr. Nice'},
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
@@ -35,5 +35,5 @@ export class AppComponent {
   };
   // no need to specify type of heros since TypeScript can infer from the ListOfHeroes array
   // create public property in AppComponent that exposes the heroes for binding
-  heroes = ListOfHeroes;
+  heroes = HEROES;
 }
