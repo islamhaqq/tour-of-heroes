@@ -1,5 +1,7 @@
-# TourOfHeroes 
+# Tour of Heroes 
+An Angular app that helps a staffing agency manage its stable of heroes.
 
+## Accomplishments
 * Our Tour of Heroes uses the double curly braces of interpolation (a kind of one-way data binding) to display the application title and properties of a Hero object.
 * We wrote a multi-line template using ES2015’s template strings to make our template readable.
 * We can both display and change the hero’s name after adding a two-way data binding to the <input> element using the built-in ngModel directive.
