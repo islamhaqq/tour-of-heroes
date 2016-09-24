@@ -30,11 +30,10 @@ const HEROES: Hero[] = [
 })
 export class AppComponent {
   title = 'Tour of Heroes';
-  hero : Hero = {
-    id : 1,
-    name : 'Windstorm'
-  };
-  // no need to specify type of heros since TypeScript can infer from the HEROES array
-  // create public property in AppComponent that exposes the heroes for binding
   heroes = HEROES;
+  selectedHero : Hero;
+  
+  onSelect(hero : Hero): void{
+    this.selectedHero = hero;
+  };
 }
