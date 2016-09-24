@@ -9,6 +9,7 @@ export class Hero{
   name : string;
 }
 
+// seperate hero data from component class implementation. Fetch hero data using a data service later
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice'},
   { id: 12, name: 'Narco' },
@@ -33,7 +34,7 @@ export class AppComponent {
     id : 1,
     name : 'Windstorm'
   };
-  // no need to specify type of heros since TypeScript can infer from the ListOfHeroes array
+  // no need to specify type of heros since TypeScript can infer from the HEROES array
   // create public property in AppComponent that exposes the heroes for binding
   heroes = HEROES;
 }
