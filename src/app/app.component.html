@@ -15,8 +15,8 @@
   My Heroes
 </h2>
 <ul>
-  <li>
     <!--each hero from ListOfHeroes goes here-->
     <li *ngFor="let hero of heroes">
-  </li>
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
 </ul>
