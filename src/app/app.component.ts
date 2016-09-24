@@ -34,5 +34,6 @@ export class AppComponent {
     name : 'Windstorm'
   };
   // no need to specify type of heros since TypeScript can infer from the ListOfHeroes array
-  heros = ListOfHeroes;
+  // create public property in AppComponent that exposes the heroes for binding
+  heroes = ListOfHeroes;
 }
