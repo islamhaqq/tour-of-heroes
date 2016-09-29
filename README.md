@@ -11,6 +11,10 @@ Demo: https://syedaman.github.io/tour-of-heroes/
 * Our Tour of Heroes now displays a list of selectable heroes
 * We added the ability to select a hero and show the hero’s details
 * We learned how to use the built-in directives ngIf and ngFor in a component’s template
+* We created a reusable component
+* We learned how to make a component accept input
+* We learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
+* We learned to bind a parent component to a child component.
 
 ## Angular CLI
 
