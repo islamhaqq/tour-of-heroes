@@ -4,17 +4,17 @@ An Angular app that helps a staffing agency manage its stable of heroes.
 Demo: https://syedaman.github.io/tour-of-heroes/
 
 ## Accomplishments
-* Our Tour of Heroes uses the double curly braces of interpolation (a kind of one-way data binding) to display the application title and properties of a Hero object.
-* We wrote a multi-line template using ES2015’s template strings to make our template readable.
-* We can both display and change the hero’s name after adding a two-way data binding to the <input> element using the built-in ngModel directive.
+* Tour of Heroes uses the double curly braces of interpolation (a kind of one-way data binding) to display the application title and properties of a Hero object.
+* Wrote a multi-line template using ES2015’s template strings to make our template readable.
+* Can both display and change the hero’s name after adding a two-way data binding to the <input> element using the built-in ngModel directive.
 * The ngModel directive also propagates changes to every other binding of the hero.name.
-* Our Tour of Heroes now displays a list of selectable heroes
-* We added the ability to select a hero and show the hero’s details
-* We learned how to use the built-in directives ngIf and ngFor in a component’s template
-* We created a reusable component
-* We learned how to make a component accept input
-* We learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
-* We learned to bind a parent component to a child component.
+* Tour of Heroes now displays a list of selectable heroes
+* Added the ability to select a hero and show the hero’s details
+* Learned how to use the built-in directives ngIf and ngFor in a component’s template
+* Created a reusable component
+* Learned how to make a component accept input
+* Learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
+* Learned to bind a parent component to a child component.
 
 ## Angular CLI
 
