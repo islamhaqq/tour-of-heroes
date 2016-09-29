@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { Hero } from './hero.ts';
 
 // seperate hero data from component class implementation. Fetch hero data using a data service later
+// mock data
 const HEROES_ARRAY: Hero[] = [
   { id: 11, name: 'Mr. Nice'},
   { id: 12, name: 'Narco' },
