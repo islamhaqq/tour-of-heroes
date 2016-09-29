@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { Hero } from './hero.ts';
 
 // seperate hero data from component class implementation. Fetch hero data using a data service later
-const HEROES: Hero[] = [
+const HEROES_ARRAY: Hero[] = [
   { id: 11, name: 'Mr. Nice'},
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
@@ -24,7 +24,7 @@ const HEROES: Hero[] = [
 })
 export class AppComponent {
   title = 'Tour of Heroes';
-  heroes = HEROES;
+  heroesArray = HEROES_ARRAY;
   selectedHero : Hero;
   
   onSelect(hero : Hero): void{

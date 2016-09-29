@@ -6,11 +6,11 @@
 </h2>
 <ul class="listOfHeroes">
   <!--each hero from HEROES goes here-->
-  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"> <!--"Take each hero in the heroes array, store it in the local variable hero, and make it available to the corresponding template instance"
+  <li *ngFor="let hero of heroesArray" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"> <!--"Take each hero in the heroes array, store it in the local variable hero, and make it available to the corresponding template instance"
   let identifies hero as a template input variable. It also allows hero to be referenced from within this master template
   * prefix of ngFor indicates a master template
   ngFor directive iterates over the array returned by AppComponent.heroes-->
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
-<my-hero-detail [hero]="selectedHero"></my-hero-detail>
+<hero-detail [hero]="selectedHero"></hero-detail>
