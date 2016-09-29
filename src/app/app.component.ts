@@ -1,13 +1,7 @@
 // root component
 
 import { Component } from '@angular/core';
-
-// Hero class
-// Classes are created before the final component class is exported
-export class Hero{
-  id : number;
-  name : string;
-}
+import { Hero } from './hero.ts';
 
 // seperate hero data from component class implementation. Fetch hero data using a data service later
 const HEROES: Hero[] = [
