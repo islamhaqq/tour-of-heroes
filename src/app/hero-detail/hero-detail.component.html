@@ -1,12 +1,12 @@
-<div *ngIf="hero">
+<div *ngIf="listedHero">
   <h2>
-    {{hero.name}} details!
+    {{listedHero.name}} details!
   </h2>
   <div>
-    <label>id: </label> {{hero.id}}
+    <label>id: </label> {{listedHero.id}}
   </div>
   <div>
     <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name">
+    <input [(ngModel)]="listedHero.name" placeholder="name">
   </div>
 </div>

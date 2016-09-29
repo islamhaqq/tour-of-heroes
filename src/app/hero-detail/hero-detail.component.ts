@@ -8,7 +8,7 @@ import { Hero } from '../Hero.ts';
 })
 export class HeroDetailComponent implements OnInit {
   @Input()
-  hero : Hero;
+  listedHero : Hero;
   
   constructor() {}
   ngOnInit() {}
