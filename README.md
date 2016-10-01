@@ -15,6 +15,11 @@ Demo: https://syedaman.github.io/tour-of-heroes/
 * Learned how to make a component accept input
 * Learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
 * Learned to bind a parent component to a child component.
+* We created a service class that can be shared by many components.
+* We used the ngOnInit Lifecycle Hook to get our heroes when our AppComponent activates.
+* We defined our HeroService as a provider for our AppComponent.
+* We created mock hero data and imported them into our service.
+* We designed our service to return a Promise and our component to get our data from the Promise.
 
 ## Angular CLI
 
