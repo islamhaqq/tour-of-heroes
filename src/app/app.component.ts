@@ -10,7 +10,7 @@ import { HeroService } from './hero.service';
   styleUrls: ['./app.component.css'],
   providers: [HeroService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Tour of Heroes';
   heroesArray: Hero[];
   selectedHero : Hero;
@@ -20,10 +20,14 @@ export class AppComponent {
   };
 
   constructor(private heroService: HeroService) {
-    this.getHeroes();
   }
 
   getHeroes(): void {
     this.heroesArray = this.heroService.getHeroes();
+  }
+
+  // use ngOnInit lifecycle hook to call getHeroes() on creation of AppComponent
+  ngOnInit(): void {
+    this.getHeroes();
   }
 }
