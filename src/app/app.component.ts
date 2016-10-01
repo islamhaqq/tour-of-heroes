@@ -1,6 +1,6 @@
 // root component
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
@@ -20,11 +20,10 @@ export class AppComponent {
   };
 
   constructor(private heroService: HeroService) {
-
+    this.getHeroes();
   }
 
   getHeroes(): void {
     this.heroesArray = this.heroService.getHeroes();
   }
-  
 }
