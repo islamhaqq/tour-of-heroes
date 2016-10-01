@@ -20,6 +20,11 @@ export class AppComponent {
   };
 
   constructor(private heroService: HeroService) {
-    this.heroesArray = heroService.getHeroes();
+
   }
+
+  getHeroes(): void {
+    this.heroesArray = this.heroService.getHeroes();
+  }
+  
 }
