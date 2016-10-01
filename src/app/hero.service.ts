@@ -11,7 +11,7 @@ export class HeroService {
   constructor() { }
 
   // indicate returns array of heroes
-  getHeroes(): Hero[] {
-    return HEROES_ARRAY;
+  getHeroes(): Promise<Hero[]> {
+    return Promise.resolve(HEROES_ARRAY);
   }
 }
