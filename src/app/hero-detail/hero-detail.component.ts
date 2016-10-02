@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../Hero.ts';
 
 @Component({
-  moduleId: module.id,
   selector: 'hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css']
