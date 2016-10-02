@@ -8,7 +8,7 @@ import { HeroService } from '../hero.service';
   selector: 'heroes-view',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  providers: [HeroService]
+  providers: []
 })
 export class HeroesComponent implements OnInit{
   heroesArray: Hero[];
