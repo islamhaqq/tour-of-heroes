@@ -1,15 +1,34 @@
+// root component
+
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
+import { HeroService } from '../hero.service';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'heroes-view',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  styleUrls: ['./heroes.component.css'],
+  providers: [HeroService]
 })
-export class HeroesComponent implements OnInit {
+export class HeroesComponent implements OnInit{
+  title = 'Tour of Heroes';
+  heroesArray: Hero[];
+  selectedHero : Hero;
+  
+  onSelect(hero : Hero): void{
+    this.selectedHero = hero;
+  };
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private heroService: HeroService) {
   }
 
+  getHeroes(): void {
+    // when the promise resolves, then fetch hero array data
+    this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray);
+  }
+
+  // use ngOnInit lifecycle hook to call getHeroes() on creation of AppComponent
+  ngOnInit(): void {
+    this.getHeroes();
+  }
 }
