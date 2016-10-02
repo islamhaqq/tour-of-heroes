@@ -24,7 +24,7 @@ export class AppComponent implements OnInit{
 
   getHeroes(): void {
     // when the promise resolves, then fetch hero array data
-    this.heroService.getHeroes().then(heroesArray => this.heroesArray = heroesArray);
+    this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray);
   }
 
   // use ngOnInit lifecycle hook to call getHeroes() on creation of AppComponent
