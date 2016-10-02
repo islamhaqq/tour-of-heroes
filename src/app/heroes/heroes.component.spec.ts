@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from '../app/app.component';
+import { HeroesComponent } from './heroes.component';
 
 describe('App: TourOfHeroes', () => {
   beforeEach(() => {
