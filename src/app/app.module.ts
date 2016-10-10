@@ -19,14 +19,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RouterModule.forRoot([
       {
         path: 'heroes',
-        component: HeroesComponent
+        component: HeroesComponent,
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
       }
     ])
   ],
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    HeroesComponent, DashboardComponent
+    HeroesComponent,
+    DashboardComponent
   ],
   providers: [
     HeroService
