@@ -12,7 +12,9 @@ export class DashboardComponent implements OnInit {
   // create component property to be used in template
   heroesArray: Hero[];
 
-  constructor() { }
+  // instantiate HeroesService so it can be used in DashboardComponent
+  constructor(private heroService: HeroService) {
+  }
 
   ngOnInit() {
   }
