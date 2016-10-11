@@ -16,7 +16,13 @@ export class DashboardComponent implements OnInit {
   constructor(private heroService: HeroService) {
   }
 
+  fetchHeroesArray(): void {
+    this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray)
+  }
+
   ngOnInit() {
+    // fetch promised HEROES_ARRAY upon creation of DashboardComponent
+    this.fetchHeroesArray();
   }
 
 }
