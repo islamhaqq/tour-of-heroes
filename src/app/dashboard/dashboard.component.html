@@ -1,4 +1,4 @@
 <h3>Top Heroes</h3>
-<div>
-  <div *ng-for="let listedHero of heroesArray">
+<div *ngFor="let listedHero of heroesArray">
+  <h4>{{listedHero.name}}</h4>
 </div>
