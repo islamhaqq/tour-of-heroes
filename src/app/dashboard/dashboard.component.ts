@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
   }
 
   fetchHeroesArray(): void {
-    this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray)
+    this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray.slice(1,5))
   }
 
   ngOnInit() {
