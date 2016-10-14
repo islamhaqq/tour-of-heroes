@@ -14,6 +14,11 @@ export class HeroDetailComponent implements OnInit {
   // input listedHero value from Hero.ts
   @Input() listedHero : Hero;
 
-  constructor() {}
+  constructor(
+    private heroService: HeroService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) {}
+
   ngOnInit() {}
 }
