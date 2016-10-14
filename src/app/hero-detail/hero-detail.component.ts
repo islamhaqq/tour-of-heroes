@@ -7,10 +7,8 @@ import { Hero } from '../Hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  // listedHero is an input, the target of a property binding so it will have [] around it
-  @Input()
   // reference Hero class from AppComponent
-  listedHero : Hero;
+  @Input() listedHero : Hero;
   
   constructor() {}
   ngOnInit() {}
