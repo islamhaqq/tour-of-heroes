@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { Hero } from '../Hero';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'hero-detail',
@@ -7,9 +9,9 @@ import { Hero } from '../Hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  // reference Hero class from AppComponent
+  // input listedHero value from Hero.ts
   @Input() listedHero : Hero;
-  
+
   constructor() {}
   ngOnInit() {}
 }
