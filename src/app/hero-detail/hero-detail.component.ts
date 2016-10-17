@@ -23,6 +23,7 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.forEach((params: Params) => { // Use forEach() to go through array of all route parameters and then extract value of hero-id
       let id = +params['hero-id'];
+      this.heroService.getHero(id).then(promisedHero => this.listedHero = promisedHero);
     });
   }
 }
