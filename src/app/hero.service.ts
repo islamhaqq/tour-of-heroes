@@ -21,7 +21,7 @@ export class HeroService {
     .then(() => this.getHeroes());
   }
 
-  getHero(id: number): Promise<Hero> {
-    return this.getHeroes().then(promisedArray => promisedArray.find(promisedHero => promisedHero.id === id));
+  getHero(hero_id: number): Promise<Hero> {
+    return this.getHeroes().then(promisedArray => promisedArray.find(promisedHero => promisedHero.hero_id === hero_id));
   }
 }

@@ -31,7 +31,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         component: DashboardComponent
       },
       {
-        path: 'detail/:hero-id',
+        path: 'detail/:hero_id',
         component: HeroDetailComponent
       }
     ])

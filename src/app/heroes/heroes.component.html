@@ -9,7 +9,7 @@
   call onSelect(listedHero) once user clicks a hero and update selectedHero property with the clicked hero.
   * prefix of ngFor indicates a master template
   ngFor directive iterates over the array returned by AppComponent.heroes-->
-    <span class="badge">{{listedHero.id}}</span> {{listedHero.name}}
+    <span class="badge">{{listedHero.hero_id}}</span> {{listedHero.name}}
   </li>
 </ul>
 <!--render HeroDetailComponent, but property bind the listedHero property by inputting the selectedHero value-->
