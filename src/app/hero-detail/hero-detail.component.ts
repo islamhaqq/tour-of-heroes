@@ -21,9 +21,8 @@ export class HeroDetailComponent implements OnInit {
   ) {}
 
   fetchHero(): void {
-      this.activatedRoute.params.forEach((params: Params) => { // Use forEach() to go through array of all route parameters and then extract value of hero-id
-      let id = +params['hero-id'];
-      this.heroService.getHero(id).then(promisedHero => this.listedHero = promisedHero);
+      this.activatedRoute.params.forEach((params: Params) => { // Use forEach() to go through array of all route parameters and then extract value of hero_id
+      this.heroService.getHero(+params['hero_id']).then(promisedHero => this.listedHero = promisedHero);
     });
   }
 
