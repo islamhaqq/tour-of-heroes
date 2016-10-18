@@ -20,10 +20,14 @@ export class HeroDetailComponent implements OnInit {
     private location: Location
   ) {}
 
-  ngOnInit(): void {
-    this.activatedRoute.params.forEach((params: Params) => { // Use forEach() to go through array of all route parameters and then extract value of hero-id
+  fetchHero(): void {
+      this.activatedRoute.params.forEach((params: Params) => { // Use forEach() to go through array of all route parameters and then extract value of hero-id
       let id = +params['hero-id'];
       this.heroService.getHero(id).then(promisedHero => this.listedHero = promisedHero);
     });
+  }
+
+  ngOnInit(): void {
+    this.fetchHero();
   }
 }
