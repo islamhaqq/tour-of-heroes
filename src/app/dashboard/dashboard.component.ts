@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { HeroService } from '../hero.service';
 import { Hero } from '../hero';
@@ -13,11 +14,17 @@ export class DashboardComponent implements OnInit {
   heroesArray: Hero[];
 
   // instantiate HeroesService so it can be used in DashboardComponent
-  constructor(private heroService: HeroService) {
+  constructor(
+    private heroService: HeroService, private router: Router) {
   }
 
   fetchHeroesArray(): void {
     this.heroService.getHeroes().then(promisedArray => this.heroesArray = promisedArray.slice(1,5))
+  }
+
+  goToDetail(listedHero: Hero): void {
+    let link = ['/detail', listedHero.hero_id]
+    this.router.navigate(link);
   }
 
   ngOnInit() {
