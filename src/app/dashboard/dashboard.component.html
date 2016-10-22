@@ -1,4 +1,4 @@
 <h3>Top Heroes</h3>
-<div *ngFor="let listedHero of heroesArray">
+<div *ngFor="let listedHero of heroesArray" (click) ="goToDetail(listedHero)" class="col-1-4">
   <h4>{{listedHero.name}}</h4>
 </div>
