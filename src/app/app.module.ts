@@ -14,27 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    // Define routes
-    RouterModule.forRoot([
-      {
-        path: '',
-        redirectTo: '/dashboard',
-        pathMatch: 'full'
-      },
-      {
-        path: 'heroes',
-        component: HeroesComponent,
-      },
-      {
-        path: 'dashboard',
-        component: DashboardComponent
-      },
-      {
-        path: 'detail/:hero_id',
-        component: HeroDetailComponent
-      }
-    ])
+    HttpModule
   ],
   declarations: [
     AppComponent,
