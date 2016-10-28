@@ -16,7 +16,8 @@ import { RoutingAppModule } from './routing-app/routing-app.module';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RoutingAppModule
   ],
   declarations: [
     AppComponent,
